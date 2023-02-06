@@ -1,0 +1,16 @@
+{
+    "name": "YT Skip",
+    "description": "YT Skip",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+          "matches": ["https://www.youtube.com/*"],
+          "js": ["content-script.js"]
+        }
+    ],
+    "permissions": ["alarms", "storage", "activeTab", "declarativeContent", "scripting"],
+    "host_permissions": [
+      "<all_urls>"
+    ]
+}
